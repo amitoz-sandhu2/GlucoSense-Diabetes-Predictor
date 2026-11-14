@@ -1,0 +1,73 @@
+{
+  "best_model": "Logistic Regression",
+  "dataset_rows": 768,
+  "cleaning_report": {
+    "rows_raw": 768,
+    "rows_after_duplicates_removed": 768,
+    "zeros_treated_as_missing": {
+      "Glucose": 5,
+      "BloodPressure": 35,
+      "SkinThickness": 227,
+      "Insulin": 374,
+      "BMI": 11
+    },
+    "out_of_range_set_to_missing": {
+      "Glucose": 0,
+      "BloodPressure": 4,
+      "SkinThickness": 2,
+      "Insulin": 3,
+      "BMI": 1
+    },
+    "missing_after_cleaning": {
+      "Glucose": 5,
+      "BloodPressure": 39,
+      "SkinThickness": 229,
+      "Insulin": 377,
+      "BMI": 12
+    }
+  },
+  "repeated_cv": {
+    "accuracy": 0.7520651897122486,
+    "recall": 0.7170929419986024,
+    "precision": 0.6304786070633026,
+    "roc_auc": 0.8340828791055206
+  },
+  "train_rows": 614,
+  "test_rows": 154,
+  "cv_roc_auc": {
+    "Logistic Regression": 0.8436088039867109,
+    "Random Forest": 0.8383264119601328,
+    "Gradient Boosting": 0.8289465669988927
+  },
+  "accuracy": 0.7012987012987013,
+  "precision": 0.5606060606060606,
+  "recall": 0.6851851851851852,
+  "f1": 0.6166666666666667,
+  "roc_auc": 0.8057407407407408,
+  "confusion_matrix": {
+    "tn": 71,
+    "fp": 29,
+    "fn": 17,
+    "tp": 37
+  },
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "feature_importance": {
+    "Pregnancies": 0.12338934040874025,
+    "Glucose": 0.3987551080156683,
+    "BloodPressure": 0.02194002210823738,
+    "SkinThickness": 0.02698868313739117,
+    "Insulin": 0.035401895941844265,
+    "BMI": 0.22282841651396681,
+    "DiabetesPedigreeFunction": 0.09977791734869475,
+    "Age": 0.07091861652545699
+  }
+}
