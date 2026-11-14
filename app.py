@@ -71,6 +71,19 @@ div[data-testid="stFormSubmitButton"] > button:hover { filter: brightness(1.08);
 .next { background: linear-gradient(135deg,#0b3b4a,#0e7c86); color: #fff; border-radius: 18px; padding: 20px 26px; margin: 22px 0 8px 0; }
 .next b { font-size: 1.1rem; } .next p { margin: 6px 0 0 0; color: #d3f1f2; }
 .foot { text-align: center; color: #7b9095; font-size: .8rem; margin: 34px 0 10px 0; }
+
+/* Make form labels darker and easier to read */
+div[data-testid="stWidgetLabel"] p,
+div[data-testid="stWidgetLabel"] label,
+.stNumberInput label,
+.stTextInput label,
+.stSelectbox label,
+.stSlider label {
+    color: #173b43 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
